@@ -1,6 +1,9 @@
 import React, { useContext, useState } from "react";
 import NotesContext from '../context/notes-context';
 import useMousePosition from "../hooks/useMousePosition";
+import { Button, NavLink } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 const AddNoteFormm = () => {
     const [title, setTitle] = useState('');
@@ -32,7 +35,8 @@ const AddNoteFormm = () => {
                     value={body} 
                     placeholder='Body'
                     onChange={(e) => setBody(e.target.value)} />
-                <button>Add note</button>
+                {/* <button>Add note</button> */}
+                <Button variant="primary" >Add Note</Button>
             </form>
         </>
     )

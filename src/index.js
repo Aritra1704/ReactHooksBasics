@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import NoteApp from './components/NoteApp';
 import reportWebVitals from './reportWebVitals';
+import AppRouter from './router/AppRouter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <NoteApp />
+  <AppRouter />
 );
 {/* <React.StrictMode>
     <NoteApp />

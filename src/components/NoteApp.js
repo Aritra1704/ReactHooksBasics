@@ -14,7 +14,6 @@ const NoteApp = () => {
       if(notes) {
         console.log(notes)
         dispatch({type: 'POPULATE_NOTES', notes})
-        // setNotes(notesData);
       }
     }, [])
   
